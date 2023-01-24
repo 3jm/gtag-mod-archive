@@ -1,0 +1,32 @@
+.wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: #18181B;
+    display: grid;
+    place-items: center;
+    transition: opacity .25s, visibility 1s;
+}
+.fade {
+    opacity: 0;
+    visibility: hidden;
+}
+.loader {
+    border: 4px solid #f3f3f3; /* change color as you want */
+    border-top: 4px solid #000000; /* change color as you want */
+    border-radius: 50%;
+    width: 60px; /* change size as you want */
+    height: 60px; /* change size as you want */
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  form {
+  width: 300px; /* change as you want */
+  margin: 0 auto; /* center the form */
+  padding: 20px; /* add some padding */
+  background: #f7f7f7; /* change background color */
+  border-radius: 5px; /* add some rounded corners */
+}
